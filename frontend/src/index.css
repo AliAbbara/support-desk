@@ -307,6 +307,17 @@ h3 {
   position: relative;
 }
 
+.staffNote {
+  border: 1px solid #e6e6e6;
+  border-radius: 5px;
+  text-align: left;
+  padding: 20px;
+  margin-bottom: 20px;
+  position: relative;
+  background-color: #333;
+  color: #fff;
+}
+
 .note-head {
   background: #f4f4f4;
   padding: 5px 20px;

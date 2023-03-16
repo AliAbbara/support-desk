@@ -1,11 +1,10 @@
 import { useSelector } from 'react-redux'
-import PrivateRoute from './PrivateRoute'
 
 function NoteItem({ note }) {
   const { user } = useSelector((state) => state.auth)
 
   return (
-    <div className='note'>
+    <div className={note.isStaff ? 'staffNote' : 'note'}>
       <h4>
         Note from {note.isStaff ? <span>Staff</span> : <span>{user.name}</span>}
       </h4>
